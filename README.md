@@ -1,37 +1,110 @@
-SMS Spam Detection
+# SMS Spam Detection App
 
-This repository contains code for build a machine learning model for find SMS spam.
+📱 **SMS Spam Detection** is a Streamlit web application that detects whether an SMS message is spam or not using a Naive Bayes classifier.
 
-Purposely
+## Features
 
-The objective of this project are developing a model that can classify incoming SMS messages as either spam or not spam (ham). This can helps users filter out unwanted promotional messages and avoid potentially phishing attempts.
+- Detects spam messages from SMS texts
+- Displays model performance metrics
+- Provides a user-friendly interface for spam prediction
+- Visualizes the confusion matrix of the model's performance
 
-Dependencies
+## Getting Started
 
-The project need several Python library such as pandas, numpy, nltk, sklearn, etc.
+### Prerequisites
 
-Data
+Make sure you have Python 3.x installed. You can download it from [python.org](https://www.python.org/).
 
-The project assume you own a dataset of SMS messages labelled as spam or ham. These data can obtains from various online sources.
+### Installation
 
-Usage
+1. **Clone the repository:**
 
-The project typically implemented in Jupyter Notebooks. Looking at the provided code files for specific instructions on running the model training and prediction.
+    ```sh
+    git clone https://github.com/Ysrishti-04/smsspamdetection
+    cd smsspamdetection
+    ```
 
-Here is a general outline of what the code might encompass:
-Data Load and Preprocessing: This step contain loading the SMS dataset and doing any necessary cleaning and preprocessing tasks like removing punctuation, convert text to lowercase, and manage missing values.
-Feature Engineer: This step mean creating features from the text data that can use by the machine learning model. It could involve techniques like TF-IDF or word embedment.
-Model Train: The code will train a machine learning model on the preprocessed data. Popular options for SMS spam detection involve Naive Bayes.
-Model Evaluate: The code would evaluate the performance of the trained model on a held-out test set. This will provide insights into the model's precision and generality.
-Predict: The code will enable you to input a new SMS message and prediction whether it is classified as spam or ham by the trained model.
+2. **Create and activate a virtual environment:**
 
-Future Improvements
+    ```sh
+    python -m venv .venv
+    source .venv/bin/activate 
+    ```
 
-Here some potential areas for progressing development:
-Explore more innovative machine learning models like deep learning techniques for possibly higher accuracy.
-Implement the model into a mobile application or SMS filtering service for real-time spam detection.
-Continuously updating the model with new data for enhancing its ability to detect evolving spam tactics.
+3. **Install the required packages:**
 
-Disclaimer
+    ```sh
+    pip install -r requirements.txt
+    ```
 
-It's essential to recognize that spammers continuously adjusting their tactics. While this model may work, it might not be perfect and could requires ongoing maintenance and retraining to remain effective.
+### Running the App
+
+To run the Streamlit app, use the following command:
+
+```sh
+streamlit run app.py
+```
+
+Open your web browser and go to `http://localhost:8501` to see the app.
+
+## Project Structure
+
+```
+sms-spam-detection/
+│
+├── project/
+│   └── SMSSpamCollection    # Dataset file
+├── app.py                   # Main Streamlit app
+├── requirements.txt         # List of dependencies
+├── README.md                # Project documentation
+└── LICENSE                  # MIT License
+```
+
+## Contribution Guidelines
+
+We welcome contributions to improve this project!
+
+### How to Contribute
+
+1. **Fork the repository:**
+
+    Click the "Fork" button at the top right of this page.
+
+2. **Clone your fork:**
+
+    ```sh
+    git clone https://github.com/Ysrishti-04/smsspamdetection
+    cd smsspamdetection
+    ```
+
+3. **Create a branch:**
+
+    ```sh
+    git checkout -b feature/your-feature-name
+    ```
+
+4. **Make your changes and commit them:**
+
+    ```sh
+    git add .
+    git commit -m "Add feature: your-feature-name"
+    ```
+
+5. **Push to your fork:**
+
+    ```sh
+    git push origin feature/your-feature-name
+    ```
+
+6. **Submit a pull request:**
+
+    Go to the original repository on GitHub and click "New Pull Request". Provide a clear description of your changes.
+
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+
+
