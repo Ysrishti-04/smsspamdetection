@@ -85,7 +85,7 @@ acc_s = accuracy_score(y_test, y_pred) * 100
 # Model Performance
 
 st.subheader('Model Performance')
-st.markdown(f"**Best accuracy: {best_accuracy:.2f}% with alpha={alpha_val:.1f}** 🎉")
+st.markdown(f"**Best accuracy: {best_accuracy:.2f} with alpha={alpha_val:.1f}** 🎉")
 
 
 
@@ -93,7 +93,7 @@ st.markdown(f"**Best accuracy: {best_accuracy:.2f}% with alpha={alpha_val:.1f}**
 # Visual the performance
 
 st.subheader('📊 Model Performance on Test Data')
-st.write(f"Accuracy of the model on the test set: {acc_s:.2f}%")
+st.write(f"Accuracy of the model on the test set: {acc_s:.2f}")
 
 st.write('Confusion Matrix:')
 from sklearn.metrics import confusion_matrix
